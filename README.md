@@ -23,15 +23,14 @@ $ docker exec -ti ${SHA_OF_THE_CONTAINER} bash
 Once inside the container, switch to postgres user and execute actions by using the following commands
 
 ```bash
-# su - postgres
-$ psql postgres < /database/db
-$ create sequence hibernate_sequence start 1 increment 1;
+su - postgres
+psql postgres < /database/db
+create sequence hibernate_sequence start 1 increment 1;
 ```
 
 # Run the tool
 
 run `mvn clean install`
-
 
 Create folder `/tmp/devfiles`
 
